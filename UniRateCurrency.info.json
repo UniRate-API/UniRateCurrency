@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "Live currency exchange rates, conversion, supported currencies and VAT rates via the UniRate API. Dependency-free; results cached through WireCache.",
   "author": "UniRate",
-  "href": "https://github.com/UniRate-API/processwire-unirate",
+  "href": "https://github.com/UniRate-API/UniRateCurrency",
   "icon": "exchange",
   "singular": true,
   "autoload": false,

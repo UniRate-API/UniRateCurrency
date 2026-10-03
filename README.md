@@ -22,20 +22,20 @@ Live currency **exchange rates**, **conversion**, **supported-currency lists**, 
 **Via the modules directory / admin**
 
 1. In the ProcessWire admin go to **Modules → Install → Add Module From Directory**
-   and enter the class name `UniRate`, or install from URL:
-   `https://github.com/UniRate-API/processwire-unirate/archive/refs/heads/main.zip`
+   and enter the class name `UniRateCurrency`, or install from URL:
+   `https://github.com/UniRate-API/UniRateCurrency/archive/refs/heads/main.zip`
 2. Click **Install**.
 3. Open the module's config screen and paste your **UniRate API key**.
 
 **Manually**
 
-Copy this repository into `/site/modules/UniRate/`, then click
+Copy this repository into `/site/modules/UniRateCurrency/`, then click
 **Modules → Refresh** and install **UniRate Currency**.
 
 **Via Composer**
 
 ```bash
-composer require unirate-api/processwire-unirate
+composer require unirate-api/unirate-currency
 ```
 
 ## Usage
@@ -44,7 +44,7 @@ Get the module instance anywhere you have the ProcessWire API available
 (templates, other modules, bootstrap scripts):
 
 ```php
-$unirate = $modules->get('UniRate');
+$unirate = $modules->get('UniRateCurrency');
 
 // Convert an amount
 echo $unirate->convert(100, 'USD', 'EUR');   // 92.5

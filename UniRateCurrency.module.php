@@ -16,7 +16,7 @@ require_once __DIR__ . '/UniRateClient.php';
  *
  * Usage from a template:
  *
- *     $unirate = $modules->get('UniRate');
+ *     $unirate = $modules->get('UniRateCurrency');
  *     echo $unirate->convert(100, 'USD', 'EUR');   // 92.5
  *     echo $unirate->getRate('USD', 'GBP');        // 0.79
  *     $codes = $unirate->getCurrencies();          // ['USD', 'EUR', ...]
@@ -27,9 +27,9 @@ require_once __DIR__ . '/UniRateClient.php';
  * @property int $timeout
  * @property int $cache_lifetime
  */
-class UniRate extends WireData implements Module, ConfigurableModule
+class UniRateCurrency extends WireData implements Module, ConfigurableModule
 {
-    // Module metadata lives in UniRate.info.json (title, version, summary, author,
+    // Module metadata lives in UniRateCurrency.info.json (title, version, summary, author,
     // href, icon, singular, autoload, requires) — the form the modules.processwire.com
     // directory parses reliably from the GitHub repo.
 

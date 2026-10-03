@@ -1,9 +1,9 @@
 {
-    "name": "unirate-api/processwire-unirate",
+    "name": "unirate-api/unirate-currency",
     "type": "processwire-module",
     "description": "Live currency exchange rates, conversion, supported currencies and VAT rates in ProcessWire via the UniRate API.",
     "keywords": ["processwire", "processwire-module", "currency", "exchange-rate", "forex", "vat", "unirate"],
-    "homepage": "https://github.com/UniRate-API/processwire-unirate",
+    "homepage": "https://github.com/UniRate-API/UniRateCurrency",
     "license": "MIT",
     "authors": [
         {

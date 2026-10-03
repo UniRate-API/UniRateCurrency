@@ -12,8 +12,8 @@ namespace ProcessWire;
  * template context.
  */
 
-/** @var UniRate $unirate */
-$unirate = $modules->get('UniRate');
+/** @var UniRateCurrency $unirate */
+$unirate = $modules->get('UniRateCurrency');
 
 // Convert an amount.
 $price = $unirate->convert(100, 'USD', 'EUR');
