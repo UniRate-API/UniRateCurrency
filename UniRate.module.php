@@ -29,23 +29,9 @@ require_once __DIR__ . '/UniRateClient.php';
  */
 class UniRate extends WireData implements Module, ConfigurableModule
 {
-    /**
-     * @return array<string,mixed>
-     */
-    public static function getModuleInfo(): array
-    {
-        return [
-            'title' => 'UniRate Currency',
-            'version' => '0.1.0',
-            'summary' => 'Live currency exchange rates, conversion, supported currencies and VAT rates via the UniRate API. Dependency-free; results cached through WireCache.',
-            'author' => 'UniRate',
-            'href' => 'https://github.com/UniRate-API/processwire-unirate',
-            'icon' => 'exchange',
-            'singular' => true,
-            'autoload' => false,
-            'requires' => ['ProcessWire>=3.0.0', 'PHP>=7.4.0'],
-        ];
-    }
+    // Module metadata lives in UniRate.info.json (title, version, summary, author,
+    // href, icon, singular, autoload, requires) — the form the modules.processwire.com
+    // directory parses reliably from the GitHub repo.
 
     public function __construct()
     {
